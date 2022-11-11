@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/scripts/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/scripts/main.css">
+    <link rel="stylesheet" href="/scripts/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/scripts/main.css" />
 
     <title>Invitation Generator</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5">
+          <h3 class="text-center mb-4">
+            Dita & Zain Weeding Invitation Generator
+          </h3>
+          <div class="form-group">
+            <label for="guestName">Guest Name</label>
+            <input
+              class="form-control"
+              id="guest-name"
+              aria-describedby="guestName"
+              placeholder="Enter guest name"
+            />
+            <small id="guestNameExample" class="form-text text-muted"
+              ><i>Ex: Joko Widodo</i></small
+            >
+          </div>
+
+          <div id="invitation-form-group" class="form-group">
+            <label for="invitationWords">Invitation</label>
+            <textarea
+              class="form-control"
+              id="invitation-words"
+              rows="10"
+              disabled
+            ></textarea>
+          </div>
+          <div class="text-center">
+              <button id="generate-btn" class="btn btn-primary">Generate</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="/scripts/jquery/jquery-3.6.1.slim.min.js"></script>
     <script src="/scripts/bootstrap/js/popper.min.js"></script>
-    <script src="/scripts/bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <script src="/scripts/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>
