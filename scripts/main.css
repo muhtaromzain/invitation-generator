@@ -10,3 +10,7 @@ body {
 #invitation-form-group {
     display: none;
 }
+
+#regenerate-btn, #copy-btn, #reset-btn {
+    display: none;
+}
