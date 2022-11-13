@@ -1,9 +1,10 @@
 $(function () {
-    let guestName = '';
-    let customGuestName = '';
-    let invitationWords = '';
-    let link = '';
-    let customLink = '';
+    let guestName               = '';
+    let customGuestName         = '';
+    let invitationWords         = '';
+    let invitationWordsForWA    = '';
+    let link                    = '';
+    let customLink              = '';
 
     let defaultLink = function () {
         let link = "https://ditakintani.muhtaromzain.com";
@@ -73,12 +74,19 @@ $(function () {
         }
 
         // invitation words
+        // invitationWordsForWA =
+        //   "*Assalamu'alaikum Wr. Wb.*\n*_Bismillahirahmanirrahim._*\n\nKepada Yth.Bapak/Ibu/Saudara/i\n*" + 
+        //   guestName +
+        //   "*\n\nTanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami:\n\n*_Dita Kintani, B.Arch._*\n*_&_*\n*_Muhtarom Zain Muhammad Sondakh, B.Sc. (CompSc)_*\n\n*Pada hari Sabtu, 7 Januari 2023*\n\nBerikut link untuk info lengkap dari acara kami:\n" +
+        //   link +
+        //   "\n\nSuatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir pada acara pernikahan kami dan memberikan doa restu.\n\nTerima Kasih.\n\nHormat kami yang berbahagia,\n*Dita & Zain*\n\n*Wassalamu'alaikum Wr. Wb.*";
+
         invitationWords =
           "Assalamu'alaikum Wr. Wb.\nBismillahirahmanirrahim.\n\nKepada Yth.Bapak/Ibu/Saudara/i\n" +
           guestName +
           "\n\nTanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami:\n\nDita Kintani, B.Arch.\n&\nMuhtarom Zain Muhammad Sondakh, B.Sc. (CompSc)\n\nPada hari Sabtu, 7 Januari 2023\n\nBerikut link untuk info lengkap dari acara kami:\n" +
           link +
-          "\n\nSuatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir pada acara pernikahan kami dan memberikan doa restu.\n\nTerima Kasih.\n\nHormat kami yang berbahagia,\nDita & Zain";
+          "\n\nSuatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir pada acara pernikahan kami dan memberikan doa restu.\n\nTerima Kasih.\n\nHormat kami yang berbahagia,\nDita & Zain\n\nWassalamu'alaikum Wr. Wb.";
 
         // set value
         $("#invitation-words").val(invitationWords);
