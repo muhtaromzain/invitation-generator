@@ -5,6 +5,7 @@ $(function () {
     let invitationWordsForWA    = '';
     let link                    = '';
     let customLink              = '';
+    let selectedGuestName       = '';
 
     let defaultLink = function () {
         let link = "https://ditakintani.muhtaromzain.com";
@@ -64,6 +65,9 @@ $(function () {
         // get guest name
         guestName = $("#guest-name").val();
 
+        // selected guest name
+        selectedGuestName = guestName;
+
         // set default guest name
         if (!guestName) {
           guestName = "di tempat";
@@ -99,17 +103,22 @@ $(function () {
         }
     };
 
-    let reset = function (e) {
+    let reset = function (e, retype) {
         e.preventDefault();
 
-        // reset all input
-        $(":input").val("");
+        if (!retype) {
+            // reset all input
+            $(":input").val("");
+        }
 
         // hide invitation words
         $("#invitation-form-group").css("display", "none");
 
         // show default btn
         defaultBtn();
+
+        // reset selected guest name
+        selectedGuestName = '';
     };
 
     // generate
@@ -124,7 +133,7 @@ $(function () {
 
     // reset
     $('#reset-btn').on('click', function (e) {
-        reset(e);
+        reset(e, false);
     });
 
     let copiedBtn = function () {
@@ -157,5 +166,15 @@ $(function () {
 
         // Alert the copied text
         alert("Copied");
+    });
+
+    $('#guest-name').on('keyup', function(e) {
+        currentState = $(this).val();
+
+        if (selectedGuestName) {
+            if (selectedGuestName != currentState) {
+                reset(e, true);
+            }
+        }
     });
 });
