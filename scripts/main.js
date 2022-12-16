@@ -90,7 +90,7 @@ $(function () {
           guestName +
           "\n\nTanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara pernikahan kami:\n\nDita Kintani, B.Arch.\n&\nMuhtarom Zain Muhammad Sondakh, B.Sc. (CompSc)\n\nPada hari Sabtu, 7 Januari 2023\n\nBerikut link untuk info lengkap dari acara kami:\n" +
           link +
-          "\n\nSuatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir pada acara pernikahan kami dan memberikan doa restu.\n\nTerima Kasih.\n\nHormat kami yang berbahagia,\nDita & Zain\n\nWassalamu'alaikum Wr. Wb.";
+          "\n\nSuatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir pada acara pernikahan kami dan memberikan doa restu.\n\nTerima Kasih.\n\nDari kami yang berbahagia,\nDita & Zain\n\nWassalamu'alaikum Wr. Wb.";
 
         // set value
         $("#invitation-words").val(invitationWords);
